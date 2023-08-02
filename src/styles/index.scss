@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+
+  .header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    
+
+    .snap-logo{
+      height: 18px;
+      margin-left: 20px;
+    }
+
+    .left-button-header{
+      border: none;
+      background-color: white;
+      margin-left: 40px;
+    }
+
+    .left-button-header:hover{
+      cursor: pointer;
+    }
+
+    .login-container{
+      display: flex;
+      margin-left: auto;
+      margin-right: 20px;
+
+      .login-button{
+        border: none;
+        background-color: white;
+      }
+
+      .login-button:hover {
+        cursor: pointer;
+      }
+
+     .register-button{
+      height: 30px;
+      width: 100px;
+      margin-left: 30px;
+      border-radius: 10px;
+      border: 0.5px solid black;
+      background-color: white;
+     }
+     
+     .register-button:hover{
+      cursor: pointer;
+     }
+    }
+
+    .arrow-horizontal{
+      display: inline-block;
+      transform: rotate(90deg);
+      margin-left: 2px;
+      font-size: 10px;
+    }
+    
+    .arrow-horizontal:hover{
+      cursor: pointer;
+    }
+
+    .arrow-vertical{
+      display: inline-block;
+      transform: rotate(90deg);
+      margin-left: 2px;
+      font-size: 10px;
+    }
+  }
+
+  .container-central{
+    display: flex;
+    justify-content: end;
+    height: 90%;
+    width: 90%;
+
+    .text-left-container{
+      width: 100%;
+      height: 100%;
+      padding: 80px 30px 40px 50px;
+
+      h1{
+        font-size: 60px;
+        width: 340px;
+      }
+
+      p{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 310px;
+      }
+
+      .Learn-buttom{
+        width: 100px;
+        height: 30px;
+        color: white;
+        background: black;
+        border-radius: 5px;
+      }
+
+      .Learn-buttom:hover{
+        cursor: pointer;
+      }
+
+      .icons-container{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        height: 50px;
+        margin-top: 20px  ;
+
+        .icons{
+          height: 20px;
+        }
+      }
+
+    }
+
+    .image-rigth{
+      width: 400px;
+    }
+  }
+}
