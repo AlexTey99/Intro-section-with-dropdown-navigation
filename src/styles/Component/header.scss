@@ -1,0 +1,42 @@
+
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    
+
+    .snap-logo{
+      height: 18px;
+      margin-left: 20px;
+    }
+
+    
+
+    .login-container{
+      display: flex;
+      margin-left: auto;
+      margin-right: 20px;
+
+      
+    }
+
+
+    .arrow-horizontal{
+      display: inline-block;
+      transform: rotate(90deg);
+      margin-left: 2px;
+      font-size: 10px;
+    }
+    
+    .arrow-horizontal:hover{
+      cursor: pointer;
+    }
+
+    .arrow-vertical{
+      display: inline-block;
+      transform: rotate(90deg);
+      margin-left: 5px;
+      font-size: 10px;
+    }
+  }

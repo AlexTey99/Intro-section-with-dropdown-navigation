@@ -9,6 +9,9 @@ import meet from "../assets/images/client-meet.svg";
 // @ts-ignore
 import maker from "../assets/images/client-maker.svg";
 import {Button} from "../components/Buttom";
+import {PopUpWindow} from "../components/PopUpWindow";
+
+
 
 const ContainerCentral = () => {
 
@@ -34,6 +37,8 @@ const ContainerCentral = () => {
                 
             </div>
             <img className="image-rigth" src={image} alt="" />
+
+            <PopUpWindow />
             
         </div>
     );

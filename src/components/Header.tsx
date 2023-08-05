@@ -1,25 +1,48 @@
 // @ts-ignore
 import logo from "../assets/images/logo.svg";
+
 import {Button} from "../components/Buttom";
+
+
 
 const Header = () => {
 
-    const loginButtonMessaje = () =>{
-        console.log("Button de login");
-    }
-
-    const registerButtonMessaje = () =>{
-        console.log("Button register");
-    }
-
+    // Funcion para mostrar la ventana emergente con sus obciones
     const Feactures = () => {
-        const arrowElement = document.getElementById('arrowFeactures');
 
-        arrowElement.addEventListener('click', () => {
-        arrowElement.classList.toggle('arrow-horizontal');
-        arrowElement.classList.toggle('arrow-vertical');
-        });
+        let div = document.getElementById("PopUpWindowFeactures");
+        
+        // Comprobar el valor actual de display del div
+        let currentDisplay = div.style.display;
+        
+        // Alternar entre "flex" y "none"
+        if (currentDisplay === "flex") {
+          div.style.display = "none";
+        } else {
+          div.style.display = "flex";
+        }
+           
+        const arrowFeactures = document.getElementById('arrowFeactures');
+       
+        arrowFeactures.classList.toggle('arrow-vertical');
+        arrowFeactures.classList.toggle('arrow-horizontal'); 
+    }
 
+    const Company = () => {
+
+        let div = document.getElementById('PopUpWindowFeactures')
+        let currentDisplay = div.style.display;
+
+        if (currentDisplay ==="flex") {
+            div.style.display = "none";
+        } else {
+            div.style.display = "flex";
+        }
+
+        const arrowCompany = document.getElementById('arrowCompany');
+       
+        arrowCompany.classList.toggle('arrow-vertical');
+        arrowCompany.classList.toggle('arrow-horizontal');
     }
 
     
@@ -36,8 +59,8 @@ const Header = () => {
             <Button text="About" classname="left-button-header"/>
 
             <div className="login-container">
-                <Button text="Login" classname="login-button" onClick={loginButtonMessaje}/>
-                <Button text="Register" classname="register-button" onClick={registerButtonMessaje}/>
+                <Button text="Login" classname="login-button"/>
+                <Button text="Register" classname="register-button"/>
             </div>
         </div>
     );

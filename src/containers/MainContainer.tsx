@@ -1,5 +1,5 @@
 import { Header } from "../components/Header";
-import { ContainerCentral } from "../components/ContainerCentral"
+import { ContainerCentral } from "./ContainerCentral"
 
 const MainContainer =()=>{
 

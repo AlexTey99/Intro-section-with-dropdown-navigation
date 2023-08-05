@@ -1,0 +1,45 @@
+
+
+.left-button-header{
+    border: none;
+    background-color: white;
+    margin-left: 40px;
+}
+
+.left-button-header:hover{
+    cursor: pointer;
+}
+
+.login-button{
+    border: none;
+    background-color: white;
+}
+
+.login-button:hover {
+  cursor: pointer;
+}
+
+.register-button{
+  height: 30px;
+  width: 100px;
+  margin-left: 30px;
+  border-radius: 10px;
+  border: 0.5px solid black;
+  background-color: white;
+}
+ 
+.register-button:hover{
+ cursor: pointer;
+}
+
+.Learn-buttom{
+    width: 100px;
+    height: 30px;
+    color: white;
+    background: black;
+    border-radius: 5px;
+}
+
+.Learn-buttom:hover{
+    cursor: pointer;
+}
