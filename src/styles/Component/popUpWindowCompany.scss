@@ -1,0 +1,17 @@
+
+.popUpWindowCompany{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 35px;
+    left: 285px;
+    height: 140px;
+    width: 140px;
+    padding: 30px;
+    border-radius: 5px;
+    background: hsl(0deg 21.05% 96.2%);
+
+    p{
+        margin-bottom: 10px;
+    }
+}

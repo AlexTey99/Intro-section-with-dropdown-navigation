@@ -30,7 +30,7 @@ const Header = () => {
 
     const Company = () => {
 
-        let div = document.getElementById('PopUpWindowFeactures')
+        let div = document.getElementById('popUpWindowCompany')
         let currentDisplay = div.style.display;
 
         if (currentDisplay ==="flex") {
@@ -52,7 +52,7 @@ const Header = () => {
 
             <Button id="Feactures" text="Features" classname="left-button-header" onClick={Feactures}/>
             <i id="arrowFeactures" className="fa-sharp fa-solid fa-chevron-up arrow-horizontal arrow-vertical"></i>
-            <Button id="Company" text="Company" classname="left-button-header"/>
+            <Button id="Company" text="Company" classname="left-button-header" onClick={Company}/>
             <i id="arrowCompany" className="fa-sharp fa-solid fa-chevron-up arrow-horizontal arrow-vertical"></i>
 
             <Button text="Carees" classname="left-button-header"/>
