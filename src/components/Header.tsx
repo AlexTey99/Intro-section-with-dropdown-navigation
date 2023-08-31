@@ -49,11 +49,16 @@ const Header = () => {
     return(
         <div className="header">
             <img className="snap-logo" src={logo} alt=""  />
-
-            <Button id="Feactures" text="Features" classname="left-button-header" onClick={Feactures}/>
-            <i id="arrowFeactures" className="fa-sharp fa-solid fa-chevron-up arrow-horizontal arrow-vertical"></i>
-            <Button id="Company" text="Company" classname="left-button-header" onClick={Company}/>
-            <i id="arrowCompany" className="fa-sharp fa-solid fa-chevron-up arrow-horizontal arrow-vertical"></i>
+            <div className="feacture-and-arrow-container">
+                <Button id="Feactures" text="Features" classname="left-button-header" onClick={Feactures}/>
+                <i id="arrowFeactures" className="fa-sharp fa-solid fa-chevron-up arrow-horizontal"></i>
+            </div>
+           
+           <div className="company-and-arrow-container">
+                <Button id="Company" text="Company" classname="left-button-header" onClick={Company}/>
+                <i id="arrowCompany" className="fa-sharp fa-solid fa-chevron-up arrow-horizontal"></i>
+           </div>
+            
 
             <Button text="Carees" classname="left-button-header"/>
             <Button text="About" classname="left-button-header"/>
